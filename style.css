@@ -1,0 +1,65 @@
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Menú principal */
+#menu, #game {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilo del tablero */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    background-color: #3a3a3a; /* Gris oscuro */
+    border: 2px solid #ffffff; /* Líneas blancas */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* X y O blancas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #4d4d4d;
+    transform: scale(1.1);
+}
+
+#reset-button, #back-button {
+    margin-top: 20px;
+}
